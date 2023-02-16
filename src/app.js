@@ -1,11 +1,14 @@
-/* eslint-disable */
-import "bootstrap";
-import "./style.css";
+var pronoun = ["the", "our"];
+var adj = ["great", "big"];
+var noun = ["jogger", "racoon"];
+var extensions = [".com", ".es"];
 
-import "./assets/img/rigo-baby.jpg";
-import "./assets/img/4geeks.ico";
-
-window.onload = function() {
-  //write your code here
-  console.log("Hello Rigo from the console!");
-};
+pronoun.forEach(x => {
+  adj.forEach(z => {
+    noun.forEach(y => {
+      extensions.forEach(t => {
+        console.log(x + z + y + t);
+      });
+    });
+  });
+});
